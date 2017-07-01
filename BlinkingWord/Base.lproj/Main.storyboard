@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="gPB-X5-OJU">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Blinking Word-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SourceViewController" customModule="BlinkingWord" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RtM-YT-OfQ">
+                                <rect key="frame" x="-0.5" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">달을 볼 수 있는 거미
+지난 5월 31일, 워싱턴 대학의 천문학자 제이미 로맥스는 자신의 연구실에서 노트북 위로 거미 한 마리가 떨어지는 것을 보았습니다. 이틀 뒤, 다시 거미 한 마리가 떨어졌습니다. 곧이어 거미 여러마리가 천정을 기어다녔습니다. “조금 신경이 쓰이더군요. 나는 거미를 무서워하는 편은 아니지만, 누가 나 대신 이 방의 거미를 좀 치워준다면 기꺼이 그러라고 하겠어요. 머리위로 거미가 떨어지는 건 정말 원하지 않으니까요.”
+로맥스는 이 거미의 이름이 제브라 깡총거미(zebra jumping spider)라는 것을 알아냈고, 트위터에 #ItIsRainingSpiderNotMen (#하늘에서거미가비처럼내려와남자말고) 라는 해쉬태그와 함께 이 사실을 올렸습니다. 완전 방역을 포함한 다양한 방법을 고민한 끝에 그녀는 학교에 이 문제를 알렸습니다. 학교는 방역 전문가를 보냈지만, 그는 천정에서 어떤 거미도 찾지 못했습니다. 그는 거미집의 알들이 부화했고 새끼 거미들은 이미 흩어졌을지 모른다고 말했습니다. “하지만 몇 시간 뒤, 다시 거미들이 나타났습니다. 어제도 거미들이 왔어요.”
+이때 동료 천문학자인 알렉스 파커가 그녀의 트윗을 보았습니다. “혹시 레이저를 써 봤어요?” 그는 답멘을 보냈습니다. “어떤 깡총거미들은 레이저를 마치 고양이처럼 쫓아간답니다.”
+
+이미 유튜브에는 거미들이 레이저를 쫓는 모습을 담은 영상이 많이 올려져 있습니다. 하지만 로맥스의 옆옆방 동료인 에밀리 레베끄는 이를 직접 해보고 싶었습니다. “마침 그녀는 레이저 포인터를 가지고 있었고, 그녀 사무실에도 거미들이 있었지요. 그녀는 내게 와 이렇게 말했습니다. ‘이거 꼭 봐야돼.’”
+두 사람은 과학자였기에 이내 다른 색깔의 레이저로 실험을 시작했습니다. 이들은 깡총거미가 붉은 레이저에는 적당한 관심을 보이는 반면 녹색 레이저는 정신을 못차릴 정도로 쫓아다닌다는 사실을 발견했습니다. 이들은 동시에 두 레이저를 모두 사용해보았고, 깡총거미는 녹색 레이저를 붉은색보다 더 선호했습니다.
+“모든 깡총거미는 붉은색보다 녹색을 더 좋아하는 걸까?” 르베끄는 이렇게 트윗을 날렸습니다. “필요할 때 서로 다른 분야의 과학자들이 답을 주는 ‘과학 트윗’ 경보가 있어야 될것 같아.”
+하지만 트위터는 그런 굳이 그런 경보를 필요로 하지 않습니다. 며칠 뒤, 거미 연구자인 캐서린 스콧은 이 트윗을 보고 자신의 친구이자 신시내티 대학에서 거미의 시각을 연구하는 네이트 모어하우스를 호출했습니다. 자신이 응원하는 피츠버그 펭귄스가 스탠리컵 경기에서 내쉬빌 프레데터스에게 패배하는 것을 보고 기분이 울적했던 모어하우스는 늦게서야 트위터를 보았습니다. “낙심한 상태로 나는 잠자리에 들기전에 트위터를 체크했습니다. 그런데 알림이 150개나 와 있는거에요.”
+“내가 설명해주지요.” 그는 르베끄에게 답멘을 보냈습니다. 깡총거미는 머리에 달린 큰 두 쌍의 눈으로 사냥감을 쫓는, 시력을 이용하는 사냥꾼입니다. 이 눈들의 망막에는 두 종류의 시각세포가 있습니다. 하나는 자외선에 민감한 세포이고, 다른 하나는 녹색에 민감합니다. 하지만 이 두번째 세포는 녹색 뿐 아니라 붉은 색에도 약하게나마 반응합니다. 즉, 깡총거미는 붉은 빛을 약한 녹색 빛으로 인식합니다.
+모어하우스는 이 제브라 깡총거미의 시각을 직접 연구한 이는 아직 없지만 다른 종에 대한 연구결과를 볼 때 르베끄와 로맥스가 발견한 사실처럼 깡총거미가 레이저에 반응할 것이라고 말합니다. “하지만 이들은 엄밀하게 통제된 실험을 하지는 않았고, 어쩌면 녹색 레이저가 더 밝은 레이저였거나 혹은 더 큰 타겟을 만들었을 수도 있습니다. 하지만 정확히 같은 종류의 레이저 포인터를 사용한다면, 깡총거미는 분명 붉은색을 덜 쫓아다닐겁니다.”
+사실 천문학자들이 깡총거미에 관심을 가져야 하는 이유는 따로 있습니다. 모어하우스는 로맥스와 르베끄에게 이렇게 말했습니다. 깡총거미의 눈은 “마치… 그러니까… 갈릴레이의 망원경과 비슷합니다.” 갈릴레이가 1969년 사용한 망원경은 긴 통의 양 끝에 렌즈를 둔 모양입니다. 이 세상의 생명체 중 이런 눈을 가진 동물은 매, 카멜레온, 깡총거미의 세 종류 뿐입니다.
+깡총거미의 경우 두 큰 눈에는 몸에 붙은 커다란 렌즈가 달려있습니다. 이 렌즈 아래에는 통이 붙어 있으며 그 통은 투명한 겔로 채워져 있습니다. 바닥 부분의 겔은 아직 우리가 알 수 없는 방식으로 형태를 변화시켜 빛을 굴절시킵니다. 이는 물리적으로 분리되지는 않지만, 마치 두번째 렌즈처럼 작용합니다.
+두개의 렌즈는 유기적으로 작동합니다. 위쪽 렌즈는 빛을 모으고, 아래 렌즈는 빛을 분산시킵니다. 이를 통해 이미지는 망막에 닿기 전 확대되며, 거미들은 자신의 크기에 비해 훨씬 더 자세한 해상도로 세상을 볼 수 있습니다. 깡총거미의 눈 두께는 1밀리미터도 되지 않고, 전체 몸 길이도 5밀리미터밖에 되지 않지만, 이들은 마치 비둘기나 작은 개와 비슷한 시각을 가집니다.
+과학자들은 이 사실을 깡총거미의 눈과 망막을 직접 관찰함으로써 알아냈습니다. 망막에는 근육이 달려 있으며 마치 망원경의 접안렌즈처럼 망막을 움직일 수 있어, 거미는 자신의 머리를 움직이지 않고도 바라보는 방향을 바꿀 수 있습니다. 모어하우스 같은 과학자들은 거미를 관찰하고 해부함으로써 어떻게 빛이 어떻게 전달되는지를 연구합니다. 또한, 거미가 세상을 어떻게 보는지도 추측할 수 있습니다.
+모어하우스는 로맥스와 르베끄, 그리고 트위터의 다른 천문학자들에게 이렇게 말했습니다. “깡총거미는 분명히 밤하늘의 달을 볼 수 있을겁니다.”
+천문학자들은 즉시 간단한 계산을 통해 깡총거미가 달은 볼 수 있지만 목성이나 화성은 볼 수 없다는 것을 확인했습니다. 깡총거미는 안드로메다 성운 역시 볼 수 있지만, 아마 그들에게는 너무 흐리게 보일겁니다. “이 황당한 망원경 눈의 단점은 밤에도 잘 볼 수 있을 정도로 빛을 모으는 능력은 없다는 것입니다.”
+그러나 달은 충분히 밝습니다. 달은 깡총거미 망막 세포 대여섯개를 자극할 수 있으며 이는 달의 어두운 분화구 역시 구분할 수 있음을 의미합니다. “이론적으로 그들은 달 표면의 밝기 차이도 구별할겁니다. 물론 정확한 광도 데이터를 봐야하지만요.”
+이번 일에서 흥미로운 지점이 하나 더 있습니다. 트위터는 일반적으로 자신과 비슷한 의견만을 듣게되는 반향실(echo chamber)로 묘사되거나 욕설과 조리돌림이 난무하는 오물통으로 여겨집니다. 하지만 때로 트위터는 이렇게 거미의 시력에 관심을 가진 천문학자가 천문학에 관심이 있으며 거미를 연구하는 생물학자를 만날 수 있는 장소가 되며 망원경 눈에 대한 지식과 레이저로 거미와 노는 방법을 가르쳐주는 도구가 되기도 한다는 것입니다.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="RtM-YT-OfQ" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="3gw-U0-U9K"/>
+                            <constraint firstItem="RtM-YT-OfQ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="7OJ-1A-JQ3"/>
+                            <constraint firstItem="RtM-YT-OfQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Z4H-E7-uVE"/>
+                            <constraint firstItem="RtM-YT-OfQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="x7P-n4-a2q"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Blinking Word" id="WCH-ga-cKX">
+                        <barButtonItem key="rightBarButtonItem" title="Read" id="kQp-lj-HXZ">
+                            <connections>
+                                <segue destination="Ii5-Jf-fz6" kind="show" identifier="ReadingSegue" id="g6i-jx-EMq"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="targetTextView" destination="RtM-YT-OfQ" id="lD3-jR-A2Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="916" y="791"/>
+        </scene>
+        <!--Reading-->
+        <scene sceneID="Q6j-bM-A1S">
+            <objects>
+                <viewController id="Ii5-Jf-fz6" customClass="ReadingViewController" customModule="BlinkingWord" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cxw-Xp-GhQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="pzb-8Y-SaA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fXP-Uy-NkD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5uI-CM-tLn">
+                                <rect key="frame" x="0.0" y="204" width="375" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wGK-ea-g2K">
+                                <rect key="frame" x="147" y="419.5" width="80" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="FVm-Oa-fCQ"/>
+                                    <constraint firstAttribute="width" constant="80" id="U4I-35-Wqr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Start"/>
+                                <state key="selected" title="Pause"/>
+                                <connections>
+                                    <action selector="start:" destination="Ii5-Jf-fz6" eventType="touchUpInside" id="rwB-e1-kWQ"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="8fD-7c-5xO">
+                                <rect key="frame" x="16" y="556" width="343" height="30"/>
+                                <subviews>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.40000000000000002" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="dc7-Qj-6ht">
+                                        <rect key="frame" x="-2" y="0.0" width="281" height="31"/>
+                                        <connections>
+                                            <action selector="sliderValueChanged:" destination="Ii5-Jf-fz6" eventType="valueChanged" id="kGZ-i7-mtp"/>
+                                        </connections>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.4" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Q0-Pu-n6K">
+                                        <rect key="frame" x="293" y="0.0" width="50" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="dnM-uO-jFC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5uI-CM-tLn" firstAttribute="centerX" secondItem="fXP-Uy-NkD" secondAttribute="centerX" id="1Qb-SA-2Ve"/>
+                            <constraint firstItem="8fD-7c-5xO" firstAttribute="top" secondItem="wGK-ea-g2K" secondAttribute="bottom" constant="86.5" id="60M-nb-g03"/>
+                            <constraint firstItem="8fD-7c-5xO" firstAttribute="width" secondItem="fXP-Uy-NkD" secondAttribute="width" constant="-32" id="6Dm-go-bNv"/>
+                            <constraint firstItem="5uI-CM-tLn" firstAttribute="centerY" secondItem="fXP-Uy-NkD" secondAttribute="centerY" multiplier="2/3" id="BN4-Mc-tW0"/>
+                            <constraint firstItem="8fD-7c-5xO" firstAttribute="centerX" secondItem="fXP-Uy-NkD" secondAttribute="centerX" id="LDq-GD-T5X"/>
+                            <constraint firstItem="5uI-CM-tLn" firstAttribute="width" secondItem="fXP-Uy-NkD" secondAttribute="width" id="NsE-2e-ki7"/>
+                            <constraint firstItem="wGK-ea-g2K" firstAttribute="centerX" secondItem="fXP-Uy-NkD" secondAttribute="centerX" id="j8m-sV-AeN"/>
+                            <constraint firstItem="wGK-ea-g2K" firstAttribute="centerY" secondItem="fXP-Uy-NkD" secondAttribute="centerY" multiplier="4/3" id="sx8-ZQ-Omq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Reading" id="wBh-Te-Ou3"/>
+                    <connections>
+                        <outlet property="readingLabel" destination="5uI-CM-tLn" id="ROY-w1-sgI"/>
+                        <outlet property="speedLabel" destination="6Q0-Pu-n6K" id="YZJ-NT-hsi"/>
+                        <outlet property="startButton" destination="wGK-ea-g2K" id="GaV-Gk-SdU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HUM-QS-bht" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1645.5999999999999" y="789.35532233883066"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Qmw-tS-TFt">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gPB-X5-OJU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="STd-7z-Zc9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="rkd-XG-vjm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XIc-eO-Abt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="791.15442278860576"/>
+        </scene>
+    </scenes>
+</document>
