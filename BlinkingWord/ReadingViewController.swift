@@ -54,7 +54,7 @@ class ReadingViewController: UIViewController {
     
     func startReading() {
         self.isReading = true
-        self.timer = Timer.scheduledTimer(withTimeInterval: self.readingSpeed, repeats: true) { [unowned self](timer: Timer) in
+        self.timer = Timer.scheduledTimer(withTimeInterval: self.readingSpeed, repeats: true) { [unowned self] (timer: Timer) in
             self.readingLabel.text = self.sourceText.wordArray[self.readingIndex]
             self.readingIndex += 1
             if self.sourceText.wordArray.count == self.readingIndex {
