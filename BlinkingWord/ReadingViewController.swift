@@ -13,29 +13,33 @@ class ReadingViewController: UIViewController {
     var timer: Timer?
     var sourceText: SourceText!
     var readingIndex: Int = 0
-    var readingSpeed: Double = 0.4
+    var readingSpeed: Double = 0.5
+    let initialSpeed: Double = 0.5
+    let minimumSpeed: Double = 0.1
     var isReading: Bool = false
+    @IBOutlet weak var centerView: UIView!
+    @IBOutlet weak var aroundView: UIView!
     
-    @IBOutlet weak var speedLabel: UILabel!
-    @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var readingLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.view.isUserInteractionEnabled = true
     }
+    
+    override func viewDidLayoutSubviews() {
+        self.aroundView.layer.cornerRadius = aroundView.bounds.size.width / 2
+        self.centerView.layer.cornerRadius = centerView.bounds.size.width / 2
+        
+    }
+    
     
     override func viewWillDisappear(_ animated: Bool) {
         pauseReading()
     }
-
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.startReading()
-    }
     
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.pauseReading()
-    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -61,7 +65,6 @@ class ReadingViewController: UIViewController {
                 timer.invalidate()
                 self.isReading = false
                 self.readingIndex = 0
-                self.startButton.isSelected = false
             }
         }
     }
@@ -71,14 +74,57 @@ class ReadingViewController: UIViewController {
         self.isReading = false
     }
     
-    @IBAction func sliderValueChanged(_ sender: UISlider) {
-        self.speedLabel.text = String.init(format: "%.2f", sender.value)
-        self.readingSpeed = Double(sender.value)
-        if self.isReading {
-            pauseReading()
-            startReading()
+    
+    
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.readingSpeed = initialSpeed
+        self.startReading()
+    }
+    
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        let touchDistance = distance(from: centerView.center, to: touches.first!.location(in: aroundView))
+        
+        if touchDistance > 160.0 {
+            self.pauseReading()
+            
+        } else {
+            
+            let newSpeed = initialSpeed - distance(from: centerView.center, to: touches.first!.location(in: aroundView)) / 360.0
+            let difference = self.readingSpeed - newSpeed
+            
+            
+            
+            if abs(difference) > 0.07 {
+                
+                self.pauseReading()
+                
+                print("newSpeed", newSpeed)
+                
+                if newSpeed > minimumSpeed && newSpeed < initialSpeed {
+                    self.readingSpeed = newSpeed
+                } else if newSpeed > initialSpeed {
+                    self.readingSpeed = initialSpeed
+                } else if newSpeed < minimumSpeed {
+                    self.readingSpeed = minimumSpeed
+                }
+                
+                self.startReading()
+            }
         }
     }
     
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.pauseReading()
+    }
+    
+    func distance(from: CGPoint, to: CGPoint) -> Double {
+        let width: Double = Double(from.x - to.x)
+        let height: Double = Double(from.y - to.y)
+        let pitagoras: Double = (width * width) + (height * height)
+        
+        return pitagoras.squareRoot()
+    }
     
 }
