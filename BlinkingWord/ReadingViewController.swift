@@ -13,24 +13,32 @@ class ReadingViewController: UIViewController {
     var timer: Timer?
     var sourceText: SourceText!
     var readingIndex: Int = 0
-    var readingSpeed: Double = 0.5
+    var readingSpeed: Double = 0.5 {
+        didSet {
+            speedLabel.text = String.init(format: "%d", Int(10.0 / readingSpeed))
+        }
+    }
     let initialSpeed: Double = 0.5
     let minimumSpeed: Double = 0.1
     var isReading: Bool = false
+    
+    
+    @IBOutlet weak var speedLabel: UILabel!
     @IBOutlet weak var centerView: UIView!
     @IBOutlet weak var aroundView: UIView!
+    @IBOutlet weak var speedDashBoardView: UIView!
     
     @IBOutlet weak var readingLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.view.isUserInteractionEnabled = true
     }
     
     override func viewDidLayoutSubviews() {
         self.aroundView.layer.cornerRadius = aroundView.bounds.size.width / 2
         self.centerView.layer.cornerRadius = centerView.bounds.size.width / 2
+        self.speedDashBoardView.layer.cornerRadius = 20.0
         
     }
     
@@ -96,7 +104,7 @@ class ReadingViewController: UIViewController {
             
             
             
-            if abs(difference) > 0.07 {
+            if abs(difference) > 0.05 {
                 
                 self.pauseReading()
                 

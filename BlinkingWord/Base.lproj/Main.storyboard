@@ -24,7 +24,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RtM-YT-OfQ">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RtM-YT-OfQ">
                                 <rect key="frame" x="-0.5" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">달을 볼 수 있는 거미
@@ -46,7 +46,7 @@
 천문학자들은 즉시 간단한 계산을 통해 깡총거미가 달은 볼 수 있지만 목성이나 화성은 볼 수 없다는 것을 확인했습니다. 깡총거미는 안드로메다 성운 역시 볼 수 있지만, 아마 그들에게는 너무 흐리게 보일겁니다. “이 황당한 망원경 눈의 단점은 밤에도 잘 볼 수 있을 정도로 빛을 모으는 능력은 없다는 것입니다.”
 그러나 달은 충분히 밝습니다. 달은 깡총거미 망막 세포 대여섯개를 자극할 수 있으며 이는 달의 어두운 분화구 역시 구분할 수 있음을 의미합니다. “이론적으로 그들은 달 표면의 밝기 차이도 구별할겁니다. 물론 정확한 광도 데이터를 봐야하지만요.”
 이번 일에서 흥미로운 지점이 하나 더 있습니다. 트위터는 일반적으로 자신과 비슷한 의견만을 듣게되는 반향실(echo chamber)로 묘사되거나 욕설과 조리돌림이 난무하는 오물통으로 여겨집니다. 하지만 때로 트위터는 이렇게 거미의 시력에 관심을 가진 천문학자가 천문학에 관심이 있으며 거미를 연구하는 생물학자를 만날 수 있는 장소가 되며 망원경 눈에 대한 지식과 레이저로 거미와 노는 방법을 가르쳐주는 도구가 되기도 한다는 것입니다.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -59,7 +59,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Blinking Word" id="WCH-ga-cKX">
-                        <barButtonItem key="rightBarButtonItem" title="Read" id="kQp-lj-HXZ">
+                        <barButtonItem key="rightBarButtonItem" title="속독하기" id="kQp-lj-HXZ">
                             <connections>
                                 <segue destination="Ii5-Jf-fz6" kind="show" identifier="ReadingSegue" id="g6i-jx-EMq"/>
                             </connections>
@@ -73,7 +73,7 @@
             </objects>
             <point key="canvasLocation" x="916" y="791"/>
         </scene>
-        <!--Reading-->
+        <!--속독 모드-->
         <scene sceneID="Q6j-bM-A1S">
             <objects>
                 <viewController id="Ii5-Jf-fz6" customClass="ReadingViewController" customModule="BlinkingWord" customModuleProvider="target" sceneMemberID="viewController">
@@ -100,7 +100,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ihh-nT-B2w">
-                                <rect key="frame" x="27.5" y="267" width="320" height="320"/>
+                                <rect key="frame" x="27.5" y="315" width="320" height="320"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rJD-MV-0w4">
                                         <rect key="frame" x="80.5" y="80.5" width="160" height="160"/>
@@ -119,23 +119,68 @@
                                     <constraint firstItem="rJD-MV-0w4" firstAttribute="centerY" secondItem="Ihh-nT-B2w" secondAttribute="centerY" id="lFc-x4-11R"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OXB-bM-U98">
+                                <rect key="frame" x="47.5" y="243" width="280" height="40"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="A6X-3H-f1L">
+                                        <rect key="frame" x="20" y="3.5" width="240" height="33.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="현재 10초당" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M1d-sZ-8gc">
+                                                <rect key="frame" x="0.0" y="0.0" width="96.5" height="33.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F70-dH-HAi">
+                                                <rect key="frame" x="126" y="0.0" width="50" height="33.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="lSo-lS-wAt"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="28"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="단어" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vo2-5d-yEf">
+                                                <rect key="frame" x="205" y="0.0" width="35" height="33.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="A6X-3H-f1L" firstAttribute="centerY" secondItem="OXB-bM-U98" secondAttribute="centerY" id="0Bw-xy-5yq"/>
+                                    <constraint firstAttribute="height" constant="40" id="hA7-jK-G6p"/>
+                                    <constraint firstItem="A6X-3H-f1L" firstAttribute="centerX" secondItem="OXB-bM-U98" secondAttribute="centerX" id="lFa-4L-D5L"/>
+                                    <constraint firstItem="A6X-3H-f1L" firstAttribute="width" secondItem="OXB-bM-U98" secondAttribute="width" constant="-40" id="qNv-Gc-xVl"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="n9Y-uA-6Ex" firstAttribute="leading" secondItem="fXP-Uy-NkD" secondAttribute="leadingMargin" constant="55" id="2so-fs-UEy"/>
                             <constraint firstItem="n9Y-uA-6Ex" firstAttribute="top" secondItem="cxw-Xp-GhQ" secondAttribute="bottom" id="CMe-cA-Vlx"/>
                             <constraint firstAttribute="trailingMargin" secondItem="5uI-CM-tLn" secondAttribute="trailing" id="KG1-N4-I5R"/>
-                            <constraint firstItem="pzb-8Y-SaA" firstAttribute="top" secondItem="Ihh-nT-B2w" secondAttribute="bottom" constant="80" id="S38-qo-zZy"/>
+                            <constraint firstItem="OXB-bM-U98" firstAttribute="centerX" secondItem="fXP-Uy-NkD" secondAttribute="centerX" id="QAf-fy-iRj"/>
+                            <constraint firstItem="pzb-8Y-SaA" firstAttribute="top" secondItem="Ihh-nT-B2w" secondAttribute="bottom" constant="32" id="S38-qo-zZy"/>
+                            <constraint firstItem="Ihh-nT-B2w" firstAttribute="top" secondItem="OXB-bM-U98" secondAttribute="bottom" constant="32" id="SoD-GA-r6B"/>
+                            <constraint firstItem="OXB-bM-U98" firstAttribute="width" secondItem="Ihh-nT-B2w" secondAttribute="width" constant="-40" id="U3e-Gd-6Ld"/>
                             <constraint firstItem="5uI-CM-tLn" firstAttribute="top" secondItem="cxw-Xp-GhQ" secondAttribute="bottom" constant="100" id="agU-pp-5BS"/>
                             <constraint firstItem="5uI-CM-tLn" firstAttribute="leading" secondItem="n9Y-uA-6Ex" secondAttribute="trailing" constant="8" id="nBg-1Z-N0h"/>
                             <constraint firstItem="Ihh-nT-B2w" firstAttribute="centerX" secondItem="fXP-Uy-NkD" secondAttribute="centerX" id="vWD-4Y-yKg"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Reading" id="wBh-Te-Ou3"/>
+                    <navigationItem key="navigationItem" title="속독 모드" id="wBh-Te-Ou3">
+                        <barButtonItem key="rightBarButtonItem" title="원문보기" id="nv9-IU-jb2"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="aroundView" destination="Ihh-nT-B2w" id="Gxi-tp-dFx"/>
                         <outlet property="centerView" destination="rJD-MV-0w4" id="1ub-JF-mH2"/>
                         <outlet property="readingLabel" destination="5uI-CM-tLn" id="ROY-w1-sgI"/>
+                        <outlet property="speedDashBoardView" destination="OXB-bM-U98" id="2k5-Rf-dUu"/>
+                        <outlet property="speedLabel" destination="F70-dH-HAi" id="2jV-AM-nEH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HUM-QS-bht" userLabel="First Responder" sceneMemberID="firstResponder"/>
