@@ -14,7 +14,37 @@
 		B99A91871EFFD79A0031E915 /* SourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99A91861EFFD79A0031E915 /* SourceViewController.swift */; };
 		B99A91891EFFD7BD0031E915 /* ReadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99A91881EFFD7BD0031E915 /* ReadingViewController.swift */; };
 		B99A918B1EFFD7F10031E915 /* SourceText.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99A918A1EFFD7F10031E915 /* SourceText.swift */; };
+		B9BD5E731F1DABCC0007773E /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BD5E721F1DABCC0007773E /* ShareViewController.swift */; };
+		B9BD5E761F1DABCC0007773E /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9BD5E741F1DABCC0007773E /* MainInterface.storyboard */; };
+		B9BD5E7A1F1DABCC0007773E /* BlinkingWordShareExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B9BD5E701F1DABCC0007773E /* BlinkingWordShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B9BD5E801F1DAC960007773E /* GetURL.js in Resources */ = {isa = PBXBuildFile; fileRef = B9BD5E7F1F1DAC960007773E /* GetURL.js */; };
+		B9C87A361F1DBE0300C9ACB4 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9BD5E741F1DABCC0007773E /* MainInterface.storyboard */; };
+		B9C87A371F1DBE1F00C9ACB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B99A91781EFFD4550031E915 /* Main.storyboard */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B9BD5E781F1DABCC0007773E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B99A91691EFFD4540031E915 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9BD5E6F1F1DABCC0007773E;
+			remoteInfo = BlinkingWordShareExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B9BD5E7E1F1DABCC0007773E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B9BD5E7A1F1DABCC0007773E /* BlinkingWordShareExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B99A91711EFFD4540031E915 /* BlinkingWord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlinkingWord.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,10 +56,24 @@
 		B99A91861EFFD79A0031E915 /* SourceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceViewController.swift; sourceTree = "<group>"; };
 		B99A91881EFFD7BD0031E915 /* ReadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadingViewController.swift; sourceTree = "<group>"; };
 		B99A918A1EFFD7F10031E915 /* SourceText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceText.swift; sourceTree = "<group>"; };
+		B9BD5E701F1DABCC0007773E /* BlinkingWordShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BlinkingWordShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9BD5E721F1DABCC0007773E /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		B9BD5E751F1DABCC0007773E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		B9BD5E771F1DABCC0007773E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9BD5E7F1F1DAC960007773E /* GetURL.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = GetURL.js; sourceTree = "<group>"; };
+		B9BD5E811F1DB8750007773E /* BlinkingWord.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BlinkingWord.entitlements; sourceTree = "<group>"; };
+		B9BD5E821F1DB8EB0007773E /* BlinkingWordShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BlinkingWordShareExtension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B99A916E1EFFD4540031E915 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9BD5E6D1F1DABCC0007773E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				B99A91731EFFD4540031E915 /* BlinkingWord */,
+				B9BD5E711F1DABCC0007773E /* BlinkingWordShareExtension */,
 				B99A91721EFFD4540031E915 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				B99A91711EFFD4540031E915 /* BlinkingWord.app */,
+				B9BD5E701F1DABCC0007773E /* BlinkingWordShareExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,6 +104,7 @@
 		B99A91731EFFD4540031E915 /* BlinkingWord */ = {
 			isa = PBXGroup;
 			children = (
+				B9BD5E811F1DB8750007773E /* BlinkingWord.entitlements */,
 				B99A91741EFFD4540031E915 /* AppDelegate.swift */,
 				B99A91781EFFD4550031E915 /* Main.storyboard */,
 				B99A91861EFFD79A0031E915 /* SourceViewController.swift */,
@@ -70,6 +117,18 @@
 			path = BlinkingWord;
 			sourceTree = "<group>";
 		};
+		B9BD5E711F1DABCC0007773E /* BlinkingWordShareExtension */ = {
+			isa = PBXGroup;
+			children = (
+				B9BD5E821F1DB8EB0007773E /* BlinkingWordShareExtension.entitlements */,
+				B9BD5E721F1DABCC0007773E /* ShareViewController.swift */,
+				B9BD5E7F1F1DAC960007773E /* GetURL.js */,
+				B9BD5E741F1DABCC0007773E /* MainInterface.storyboard */,
+				B9BD5E771F1DABCC0007773E /* Info.plist */,
+			);
+			path = BlinkingWordShareExtension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -80,15 +139,34 @@
 				B99A916D1EFFD4540031E915 /* Sources */,
 				B99A916E1EFFD4540031E915 /* Frameworks */,
 				B99A916F1EFFD4540031E915 /* Resources */,
+				B9BD5E7E1F1DABCC0007773E /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B9BD5E791F1DABCC0007773E /* PBXTargetDependency */,
 			);
 			name = BlinkingWord;
 			productName = BlinkingWord;
 			productReference = B99A91711EFFD4540031E915 /* BlinkingWord.app */;
 			productType = "com.apple.product-type.application";
+		};
+		B9BD5E6F1F1DABCC0007773E /* BlinkingWordShareExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9BD5E7D1F1DABCC0007773E /* Build configuration list for PBXNativeTarget "BlinkingWordShareExtension" */;
+			buildPhases = (
+				B9BD5E6C1F1DABCC0007773E /* Sources */,
+				B9BD5E6D1F1DABCC0007773E /* Frameworks */,
+				B9BD5E6E1F1DABCC0007773E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlinkingWordShareExtension;
+			productName = BlinkingWordShareExtension;
+			productReference = B9BD5E701F1DABCC0007773E /* BlinkingWordShareExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -104,6 +182,21 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 8KDMCH8V2F;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					B9BD5E6F1F1DABCC0007773E = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 8KDMCH8V2F;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -121,6 +214,7 @@
 			projectRoot = "";
 			targets = (
 				B99A91701EFFD4540031E915 /* BlinkingWord */,
+				B9BD5E6F1F1DABCC0007773E /* BlinkingWordShareExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -131,8 +225,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				B99A917F1EFFD4550031E915 /* LaunchScreen.storyboard in Resources */,
+				B9C87A361F1DBE0300C9ACB4 /* MainInterface.storyboard in Resources */,
 				B99A917C1EFFD4550031E915 /* Assets.xcassets in Resources */,
 				B99A917A1EFFD4550031E915 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9BD5E6E1F1DABCC0007773E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9C87A371F1DBE1F00C9ACB4 /* Main.storyboard in Resources */,
+				B9BD5E761F1DABCC0007773E /* MainInterface.storyboard in Resources */,
+				B9BD5E801F1DAC960007773E /* GetURL.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,7 +255,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B9BD5E6C1F1DABCC0007773E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9BD5E731F1DABCC0007773E /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B9BD5E791F1DABCC0007773E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9BD5E6F1F1DABCC0007773E /* BlinkingWordShareExtension */;
+			targetProxy = B9BD5E781F1DABCC0007773E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B99A91781EFFD4550031E915 /* Main.storyboard */ = {
@@ -167,6 +288,14 @@
 				B99A917E1EFFD4550031E915 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B9BD5E741F1DABCC0007773E /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9BD5E751F1DABCC0007773E /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -270,7 +399,9 @@
 		B99A91841EFFD4550031E915 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BlinkingWord/BlinkingWord.entitlements;
 				DEVELOPMENT_TEAM = 8KDMCH8V2F;
 				INFOPLIST_FILE = BlinkingWord/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -283,12 +414,42 @@
 		B99A91851EFFD4550031E915 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BlinkingWord/BlinkingWord.entitlements;
 				DEVELOPMENT_TEAM = 8KDMCH8V2F;
 				INFOPLIST_FILE = BlinkingWord/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jongchanpark.developed.BlinkingWord;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		B9BD5E7B1F1DABCC0007773E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BlinkingWordShareExtension/BlinkingWordShareExtension.entitlements;
+				DEVELOPMENT_TEAM = 8KDMCH8V2F;
+				INFOPLIST_FILE = BlinkingWordShareExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jongchanpark.developed.BlinkingWord.BlinkingWordShareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B9BD5E7C1F1DABCC0007773E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BlinkingWordShareExtension/BlinkingWordShareExtension.entitlements;
+				DEVELOPMENT_TEAM = 8KDMCH8V2F;
+				INFOPLIST_FILE = BlinkingWordShareExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jongchanpark.developed.BlinkingWord.BlinkingWordShareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -310,6 +471,15 @@
 			buildConfigurations = (
 				B99A91841EFFD4550031E915 /* Debug */,
 				B99A91851EFFD4550031E915 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9BD5E7D1F1DABCC0007773E /* Build configuration list for PBXNativeTarget "BlinkingWordShareExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9BD5E7B1F1DABCC0007773E /* Debug */,
+				B9BD5E7C1F1DABCC0007773E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

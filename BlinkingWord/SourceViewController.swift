@@ -16,7 +16,10 @@ class SourceViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        let userDefaultForAppGroup: UserDefaults = UserDefaults.init(suiteName: "group.BlinkingWord")!
+        if let string: String = userDefaultForAppGroup.object(forKey: "urlString") as? String {
+            print(string)
+        }
     }
 
     override func didReceiveMemoryWarning() {
